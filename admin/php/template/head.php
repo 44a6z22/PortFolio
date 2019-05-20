@@ -1,5 +1,5 @@
 <?php
-include "php/config.php";
+    include "php/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +9,14 @@ include "php/config.php";
     <title>admin pannel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css">
+   <!-- Custom fonts for this template-->
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="assets/css/sb-admin.css" rel="stylesheet">
+    <style>
+        .justify-content-space-between {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>

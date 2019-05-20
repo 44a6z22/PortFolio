@@ -1,56 +1,59 @@
 <?php
-	
-	session_start();
-	
-	if (isset($_SESSION['admin_session'])) 
-	{
-		header('location: dashboard.php');
-	}
 
-	include "php/template/head.php";
+session_start();
+
+if (isset($_SESSION['admin_session'])) {
+	header('location: dashboard.php');
+}
+
+include "php/template/head.php";
 ?>
 
-<body>
-	<div class="container" id="login">
-		
-		<div class="row ">
+<body class="bg-dark">
 
-			<?php
+	<div class="container">
 
-			if (isset($_GET['err'])) {
-				$err = $_GET['err'];
-				require "php/template/errors.php";
-			}
+		<?php
 
-			?>
+		if (isset($_GET['err'])) {
+			$err = $_GET['err'];
+			require "php/template/errors.php";
+		}
 
-			<div class="col-md-6 offset-md-3">
 
-				<!-- card -->
-				<div class="card">
-					<h1>Admin login</h1>
+			// include "php/template/addproject.php";
+			
+		?>
 
-					<form method="post" action="php/actions/login.php">
-
-						<div class="form-group">
-							<input type="email" class="form-control" name="email" placeholder="Email">
+		<div class="card card-login mx-auto mt-5">
+			<div class="card-header">Login</div>
+			<div class="card-body">
+				<form method="post" action="php/actions/login.php">
+					<div class="form-group">
+						<div class="form-label-group">
+							<input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email address" required="required" autofocus="autofocus">
+							<label for="inputEmail">Email address</label>
 						</div>
-
-						<div class="form-group">
-							<input type="password" class="form-control" name="pass" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<div class="form-label-group">
+							<input type="password" id="inputPassword" class="form-control" name="pass" placeholder="Password" required="required">
+							<label for="inputPassword">Password</label>
 						</div>
+					</div>
 
-						<input type="submit" name="submit" value="login" class="btn btn-primary btn-block">
-					</form>
-
-				</div>
-				<!-- /card -->
+					<input type="submit" name="submit" class="btn btn-primary btn-block" value="Login" >
+				</form>
 
 			</div>
-
 		</div>
 	</div>
 
-</body>
+	<!-- Bootstrap core JavaScript-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-</html>
+	<!-- Core plugin JavaScript-->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>

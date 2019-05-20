@@ -1,14 +1,5 @@
 <?php
-    session_start();
-
-    // include the database Class 
-    require "../../../backEnd/classes/db.php";
-
-    // classes includes 
-    require "../../../backEnd/classes/profileOwner.php";
-
-    // connection include 
-    require "../../../backEnd/connection/connection.php";
+    require "config.php";
 
     // creating an admin object
     $admin = new ProfileOwner($connection); 

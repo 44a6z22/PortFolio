@@ -8,14 +8,13 @@
                 $email,
                 $password,
                 $birthDate,
-                $country, 
                 $stat, 
                 $lvl; 
         
         public function     __construct($con)
         {       
             $this->connection = $con;
-            $query = "SELECT * FROM profileOwner as p INNER JOIN stat as s ON p.stat = s.id ;";
+            $query = "SELECT * FROM users as p INNER JOIN stat as s ON p.stat = s.id ;";
             $stmt = $this->connection->prepare($query);
             $stmt->execute();
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC); 
@@ -23,10 +22,9 @@
             $this->fullName = $res [0]["fullName"]; 
             $this->id  = $res[0][ 'id'];
             $this->email = $res[0][ "email"] ; 
-            $this->password = $res[0]['password'];
+            $this->password = $res[0]['pasword'];
             $this->birthDate =  $res[0][ "birthDate"] ;
-            $this->country =  $res[0][ "country"]; 
-            $this->stat =   $res[0][ "label"]; 
+            $this->stat =   $res[0][ "statName"]; 
             $this->lvl =  $res[0][ "lvl"];
             
             // var_dump($res);

@@ -2,7 +2,7 @@
 
     class    DB
     {
-        static public     $DB_LINK = "mysql:host=127.0.0.1; dbname=portfolio; charset=utf8";
+        static public     $DB_LINK = "mysql:host=127.0.0.1; dbname=porto; charset=utf8";
         static public     $DB_LOGIN = "root";
         static public     $DB_PASS = "";
     

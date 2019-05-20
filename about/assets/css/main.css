@@ -159,17 +159,8 @@ body {
       padding-top: 80px;
       width: 100%;
       border: 1px solid black; }
-    #secondary-page .content .flex-item:not(:first-child) {
-      padding-top: 5%; }
-    #secondary-page .content .flex-item--container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      width: 80%;
-      border: 1px solid black; }
-    #secondary-page .content .flex-item--items {
-      width: 150px; }
+    #secondary-page .content .flex-item h2 {
+      font-size: 70px; }
   #secondary-page .img {
     width: 180px;
     height: 180px; }
@@ -210,10 +201,6 @@ body {
 .appear {
   opacity: 1; }
 
-.toCenter {
-  transition: 1.4s;
-  top: 20%; }
-
 .container--gone {
   display: none; }
 
@@ -240,21 +227,28 @@ body {
   font-size: 30px;
   color: transparent; }
 
-.bottom-left-corner {
+.bottom {
   cursor: pointer;
   position: absolute;
-  bottom: 2%;
-  left: 2%;
   font-size: 20px;
   color: white;
   background: transparent;
   padding: 10px 15px;
   border: none;
   border-radius: 20px 7px; }
-  .bottom-left-corner:hover .close {
-    transition: .5s;
-    transform: rotate(-90deg); }
-  .bottom-left-corner span {
+  .bottom-right-corner {
+    bottom: 2%;
+    right: 2%;
+    color: #eeeeee;
+    background: #053f5e;
+    border-radius: 20px; }
+  .bottom-left-corner {
+    bottom: 2%;
+    left: 2%; }
+    .bottom-left-corner:hover .close {
+      transition: .5s;
+      transform: rotate(-90deg); }
+  .bottom span {
     padding-left: 10px;
     padding-top: 8px;
     text-transform: uppercase; }

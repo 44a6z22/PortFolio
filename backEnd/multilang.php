@@ -7,7 +7,7 @@
     } else {
         if (!isset($_SESSION['lang'])) 
         {
-            $_SESSION['lang'] = 'en';
+            // $_SESSION['lang'] = 'en';
         }
     }
     
