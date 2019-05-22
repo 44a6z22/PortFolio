@@ -35,5 +35,5 @@ function    error($err)
     }, 500);
     setTimeout(() => {
         danger.style.display = "none";
-    }, 1000);
+    }, 1500);
 </script>

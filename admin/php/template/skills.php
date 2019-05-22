@@ -1,4 +1,3 @@
-
 <!-- DataTables Example -->
 <div class="card mb-4" id="skills">
     <div class="card-header">
@@ -14,6 +13,7 @@
                         <th>type</th>
                         <th> % </th>
                         <th>discription</th>
+                        <th>actions</th>
                     </tr>
                 </thead>
                 <tfoot>
@@ -22,6 +22,7 @@
                         <th>type</th>
                         <th> % </th>
                         <th>discription</th>
+                        <th>actions</th>
                     </tr>
                 </tfoot>
                 <tbody>
@@ -34,6 +35,17 @@
                             <td>hard skill</td>
                             <td>70</td>
                             <td>$i can manjfdsf dsfhsdlns</td>
+                            <?php
+                            if ($level == 1) 
+                            {
+                            ?>
+                                <td>
+                                    <a href="" class="btn btn-warning">update</a>
+                                    <a href="" class="btn btn-danger">Delete</a>
+                                </td>
+                            <?php
+                                }
+                            ?>
                         </tr>
 
                     <?php

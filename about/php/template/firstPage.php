@@ -1,6 +1,10 @@
 <!-- landing page -->
 <div class="container" id="main-page">
 
+    <div class="listIcon" id="menu">
+        <i class="fa fa-bars fa-lg"></i>
+    </div>
+
     <!-- professionnal info-->
     <div class="profissional-info">
         <div class="availibility">

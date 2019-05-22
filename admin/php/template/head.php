@@ -1,5 +1,7 @@
 <?php
-    include "php/config.php";
+
+include "php/config.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +11,7 @@
     <title>admin pannel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin.css" rel="stylesheet">

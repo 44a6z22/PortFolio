@@ -13,6 +13,7 @@
                         <th>type</th>
                         <th>release date</th>
                         <th>Link</th>
+                        <th>actions</th>
                     </tr>
                 </thead>
                 <tfoot>
@@ -21,22 +22,35 @@
                         <th>type</th>
                         <th>release date</th>
                         <th>Link</th>
+                        <th>actions</th>
                     </tr>
                 </tfoot>
                 <tbody>
                     <?php
-                    for ($i = 0; $i < 3; $i++) {
 
+                    $result = $project->getProjects();
+
+                    foreach ($result as $res) {
                         ?>
                         <tr>
-                            <td>youcode </td>
-                            <td>website</td>
-                            <td>2018/01/01</td>
-                            <td>github.com/44a6z22/websiteLink</td>
+                            <td><?= $res['projectName']; ?> </td>
+                            <td><?= $res['projectType']; ?></td>
+                            <td><?= $res['realisationDate']; ?></td>
+                            <td><a href="https://<?= $res['link']; ?>"><?= $res['link']; ?></a></td>
+                            <?php
+                            if ($level == 1) {
+                                ?>
+                                <td>
+                                    <a href="" class="btn btn-warning">update</a>
+                                    <a href="php/actions/deleteProject.php?id=<?= $res['id']; ?>" class="btn btn-danger">Delete</a>
+
+                                </td>
+                            <?php
+                        }
+                        ?>
                         </tr>
 
                     <?php
-
                 }
                 ?>
 

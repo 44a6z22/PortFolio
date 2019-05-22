@@ -12,20 +12,20 @@
     }
     
     
-
-    // creating an array of string and each array will be used acording to which language chosed
-   
+    // langs array 
     $lang = array(
         'en' => array(
+            // infos
             'title' => 'HAMDAOUI Hamza',
             'fullstack' => 'Full-Stack Developer',
             'firstName' => $po->getFirstName(),
             'lastName' => $po->getLastName(),
             'about' => 'about',
             'skills' => 'skills',
-            'goback' => 'go back', 
+            'goback' => 'go back',
             'busy' => "i'm currently working on a project. ", 
-            'available' => 'i\'m ready to the next project'
+            'available' => 'i\'m ready to the next project',
+            'desc' => ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.'
         ),
         'fr' => array(
             'title' => 'HAMDAOUI Hamza',
@@ -36,7 +36,8 @@
             'skills' => 'competance',
             'goback' => 'l\'acceuil',
             'busy' => 'Je travaille actuellement sur un projet.' ,            
-            'available' => 'je suis prêt pour le prochain projet'
+            'available' => 'je suis prêt pour le prochain projet',
+            'desc' => ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.'
         )
     );
 

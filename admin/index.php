@@ -5,7 +5,6 @@ session_start();
 if (isset($_SESSION['admin_session'])) {
 	header('location: dashboard.php');
 }
-
 include "php/template/head.php";
 ?>
 
@@ -15,14 +14,11 @@ include "php/template/head.php";
 
 		<?php
 
-		if (isset($_GET['err'])) {
-			$err = $_GET['err'];
-			require "php/template/errors.php";
-		}
+			if (isset($_GET['err'])) {
+				$err = $_GET['err'];
+				require "php/template/errors.php";
+			}
 
-
-			// include "php/template/addproject.php";
-			
 		?>
 
 		<div class="card card-login mx-auto mt-5">
@@ -42,7 +38,7 @@ include "php/template/head.php";
 						</div>
 					</div>
 
-					<input type="submit" name="submit" class="btn btn-primary btn-block" value="Login" >
+					<input type="submit" name="submit" class="btn btn-primary btn-block" value="Login">
 				</form>
 
 			</div>

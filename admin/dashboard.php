@@ -1,5 +1,5 @@
 <?php
-require "php/template/head.php";
+    require "php/template/head.php";
 ?>
 
 <body id="page-top">
@@ -43,12 +43,12 @@ require "php/template/head.php";
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">
+                <a class="nav-link" href="?page=addSkills">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Add a skill</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">
+                <a class="nav-link" href="?page=addproject">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Add a project </span></a>
             </li>
@@ -57,12 +57,12 @@ require "php/template/head.php";
         <div id="content-wrapper">
             <div class="container-fluid">
                 <?php
-                    if (!isset($_GET['page'])) {
-                        include "php/template/pages/dashboard.php";
-                    } else {
+                if (!isset($_GET['page'])) {
+                    include "php/template/pages/dashboard.php";
+                } else {
 
-                        include "php/template/pages/" . $_GET['page'] . ".php";
-                    }
+                    include "php/template/pages/" . $_GET['page'] . ".php";
+                }
                 ?>
             </div>
 

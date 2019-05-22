@@ -4,6 +4,7 @@
     {
         private $connection, 
                 $id , 
+                $description,
                 $fullName, 
                 $email,
                 $password,
@@ -21,6 +22,7 @@
             
             $this->fullName = $res [0]["fullName"]; 
             $this->id  = $res[0][ 'id'];
+            $this->description = $res[0][ 'description'];
             $this->email = $res[0][ "email"] ; 
             $this->password = $res[0]['pasword'];
             $this->birthDate =  $res[0][ "birthDate"] ;
@@ -29,7 +31,7 @@
             
             // var_dump($res);
         } 
-           
+        
         public function     setId($id)
         {
             $this->id = $id ;
@@ -50,6 +52,9 @@
             return $this->stat;
         }
 
+        public function     desc(){
+            return $this->description;
+        }
         public function     getFirstName()
         {
             
@@ -61,6 +66,11 @@
             return $this->getFullName()[1];
         }
 
+        public function     getLevel()
+        {
+            return intval( $this->lvl);
+        }
+        
         public function updateStat()
         {
             $query = "UPDATE TABLE profileOwner SET stat = :stat WHERE id = :id";

@@ -16,5 +16,7 @@
 
     // creating an admin object
     $admin = new ProfileOwner($connection); 
+    $level = $admin->getLevel();
     $project = new Project($connection);
+    
 ?>

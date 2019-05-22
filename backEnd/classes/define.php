@@ -1,9 +1,9 @@
 <?php
 
-    abstract class  Definition
+    abstract class  protoType
     {
-        private $connection,
-                $Id,
+        private $con,
+                $id,
                 $type,
                 $owner,
                 $name;
@@ -11,12 +11,20 @@
         
         public function     setId($id)
         {
-            $this->Id = $id;
+            $this->id = $id;
+        }
+        public function     getId()
+        {
+            return $this->id;
         }
         
+        public function     setConnection($con)
+        {
+            $this->con = $con;
+        }
         public function     getConnection()
         {
-            return $this->connection;
+            return $this->con;
         }
 }
 ?>

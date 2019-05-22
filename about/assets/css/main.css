@@ -51,10 +51,10 @@ body {
       #main-page .center #title span, #main-page .center #subTitle span {
         color: #053f5e; }
     #main-page .center #title {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
       text-transform: uppercase; }
     #main-page .center #subTitle {
-      font-size: 1rem;
+      font-size: 1.5rem;
       text-transform: uppercase; }
 
 #secondary-page {
@@ -150,38 +150,96 @@ body {
     background: #eeeeee;
     margin-bottom: 200px;
     color: black;
-    text-transform: uppercase; }
+    text-transform: none;
+    font-size: 20px; }
     #secondary-page .content .flex-container {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       padding-top: 80px;
-      width: 100%;
-      border: 1px solid black; }
+      width: 100%; }
+      #secondary-page .content .flex-container .aboutme {
+        text-align: center;
+        width: 50%; }
+        #secondary-page .content .flex-container .aboutme .resume {
+          padding: 20px; }
+          #secondary-page .content .flex-container .aboutme .resume .btn {
+            padding: 20px 40px; }
+            #secondary-page .content .flex-container .aboutme .resume .btn-resume {
+              font-size: 20px;
+              font-weight: bolder;
+              border: 5px solid #053f5e; }
+              #secondary-page .content .flex-container .aboutme .resume .btn-resume:hover {
+                background: #053f5e;
+                color: #eeeeee; }
+        #secondary-page .content .flex-container .aboutme .discription p {
+          line-height: 20px; }
+        #secondary-page .content .flex-container .aboutme .rounded-img {
+          border: 1px solid black;
+          border-radius: 50%;
+          height: 10em;
+          width: 10em; }
+        #secondary-page .content .flex-container .aboutme div:not(:last-child) {
+          margin-bottom: 30px; }
+        #secondary-page .content .flex-container .aboutme .moreAbout {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          text-align: left; }
+          #secondary-page .content .flex-container .aboutme .moreAbout div h3 {
+            margin-bottom: 30px; }
+          #secondary-page .content .flex-container .aboutme .moreAbout div:first-child {
+            grid-column-start: 1; }
+          #secondary-page .content .flex-container .aboutme .moreAbout div:last-child {
+            grid-column-start: 2; }
+          #secondary-page .content .flex-container .aboutme .moreAbout div ul {
+            list-style: none; }
+            #secondary-page .content .flex-container .aboutme .moreAbout div ul li {
+              margin-bottom: 10px; }
+              #secondary-page .content .flex-container .aboutme .moreAbout div ul li a {
+                color: #053f5e;
+                font-weight: bolder; }
+                #secondary-page .content .flex-container .aboutme .moreAbout div ul li a:hover {
+                  text-decoration: underline; }
     #secondary-page .content .flex-item h2 {
       font-size: 70px; }
-  #secondary-page .img {
-    width: 180px;
-    height: 180px; }
-    #secondary-page .img-circle {
-      border-radius: 50%;
-      border: 5px solid black; }
-      #secondary-page .img-circle:hover {
-        border: 5px solid grey; }
-  #secondary-page .secound {
-    display: none; }
 
 @media only screen and (max-width: 760px) {
-  #secondary-page .img {
-    width: 130px;
-    height: 130px; }
-    #secondary-page .img-circle {
-      border-radius: 50%;
-      border: 5px solid black; } }
+  #main-page .center {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    cursor: pointer; }
+    #main-page .center #title, #main-page .center #subTitle {
+      text-align: center;
+      color: #707070;
+      font-weight: lighter;
+      cursor: pointer; }
+      #main-page .center #title span, #main-page .center #subTitle span {
+        color: #053f5e; }
+    #main-page .center #title {
+      font-size: 3rem;
+      text-transform: uppercase; }
+    #main-page .center #subTitle {
+      font-size: 1rem;
+      text-transform: uppercase; } }
 
 @media only screen and (max-width: 760px) {
   #back-to-main #back {
+    display: none; }
+
+  .personnal-info, .profissional-info {
+    display: none; }
+
+  .listIcon {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 3%; }
+    .listIcon .fa {
+      font-size: 20px; } }
+@media only screen and (min-width: 760px) {
+  .listIcon {
     display: none; } }
 .close:hover {
   transition: .5s;
@@ -227,6 +285,9 @@ body {
   font-size: 30px;
   color: transparent; }
 
+.to-top {
+  top: 0%; }
+
 .bottom {
   cursor: pointer;
   position: absolute;
@@ -270,16 +331,6 @@ a {
     height: 100%; }
   to {
     height: 0%; } }
-@keyframes ArrowUp {
-  from {
-    top: 44%; }
-  to {
-    top: 2%; } }
-@keyframes ArrowDown {
-  from {
-    top: 51%; }
-  to {
-    top: 94%; } }
 @keyframes rotated {
   from {
     transform: rotate(0deg); }
