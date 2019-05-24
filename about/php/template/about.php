@@ -17,10 +17,10 @@
         <!-- /description -->
 
         <!-- resume  -->
-            <div class="resume">
-                <!-- <img src="" alt="" class="resume-img"> -->
-                <a class="btn btn-resume" id="resume">RESUME</a>
-            </div>
+        <div class="resume">
+            <!-- <img src="" alt="" class="resume-img"> -->
+            <a class="btn btn-resume" id="resume">RESUME</a>
+        </div>
         <!-- /resume -->
         <!-- more -->
         <div class="moreAbout">
@@ -33,7 +33,7 @@
                     foreach ($res as $r) {
                         ?>
                         <li>
-                            <a href="<?= $r['link'];?> " target="_blank" > <?= $r['projectName']; ?> </a>
+                            <a href="<?= $r['link']; ?> " target="_blank"> <?= $r['projectName']; ?> </a>
                         </li>
                     <?php
                 }
@@ -58,7 +58,15 @@
             </div>
         </div>
         <!-- /more -->
+       
+        <!-- map -->
+        <div class="map-container">
+            <?php
+
+            include "map.php";
+            ?>
+        </div>
+        <!-- /map -->
+   
     </div>
-
-
 </div>

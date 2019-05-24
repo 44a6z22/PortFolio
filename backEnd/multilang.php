@@ -25,7 +25,7 @@
             'goback' => 'go back',
             'busy' => "i'm currently working on a project. ", 
             'available' => 'i\'m ready to the next project',
-            'desc' => ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.'
+            'desc' => $po->desc()
         ),
         'fr' => array(
             'title' => 'HAMDAOUI Hamza',
@@ -33,11 +33,11 @@
             'lastName' => $po->getLastName(),
             'fullstack' => 'Développeur Full-Stack',
             'about' => 'a propos',
-            'skills' => 'competance',
+            'skills' => 'competence',
             'goback' => 'l\'acceuil',
             'busy' => 'Je travaille actuellement sur un projet.' ,            
             'available' => 'je suis prêt pour le prochain projet',
-            'desc' => ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.'
+            'desc' => ' Lorem ipsum, QJQLDJQM dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.'
         )
     );
 

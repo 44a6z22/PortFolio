@@ -5,10 +5,77 @@
     class   Project extends protoType
     {
 
-       
-        private $link, 
-                $realisationDate;
+        private $con,
+            $id,
+            $type,
+            $owner,
+            $name,
+            $link,
+            $realisationDate;
 
+
+        public function     setId($id)
+        {
+            $this->id = $id;
+        }
+        public function     getId()
+        {
+            return $this->id;
+        }
+        // setters
+
+        public function     setConnection($con)
+        {
+            $this->con = $con;
+        }
+        public function     setName($name)
+        {
+            $this->name = $name;
+        }
+        public function     setType($ty)
+        {
+            $this->type = $ty;
+        }
+        public function     setOwner($owner)
+        {
+            $this->owner = $owner;
+        }
+        public function     setDate($date)
+        {
+            $this->realisationDate = $date;
+        }
+        public function     setLink($link)
+        {
+            $this->realisationDate = $link;
+        }
+
+
+        //getters
+        public function     getConnection()
+        {
+            return $this->con;
+        }
+        public function     getName()
+        {
+            return $this->name;
+        }
+        public function     getType()
+        {
+            return $this->type;
+        }
+        public function     getOwner()
+        {
+            return $this->owner;
+        }
+        public function     getDate()
+        {
+            return $this->realisationDate;
+        }
+
+        public function     getLink()
+        {
+            return $this->link;
+        }
 
         public function     __construct()
         {
@@ -28,10 +95,10 @@
         public function     int_6( $con, $name, $type, $owner, $link, $date)
         {
             $this->setConnection($con);
-            $this->name = $name;
-            $this->type = $type;
-            $this->owner = $owner;
-            $this->link = $link;
+            $this->setName($name);
+            $this->setType($type);
+            $this->setOwner($owner);
+            $this->setLink($link);
             $this->realisationDate = $date; 
         }
 
@@ -42,11 +109,11 @@
             $stmt = $this->getConnection()->prepare($sql);
             
             $params = array(
-                ':name' => $this->name , 
-                ':type' => $this->type ,
-                ':date' => $this->realisationDate , 
-                ':link' => $this->link , 
-                ':owner' => $this->owner
+                ':name' => $this->getName() , 
+                ':type' => $this->getType() ,
+                ':date' => $this->getDate() , 
+                ':link' => $this->getLink() , 
+                ':owner' => $this->getOwner()
             );
             if( $this->validate() ){
                 return $stmt->execute($params);
@@ -69,7 +136,7 @@
         public function     count()
         {
             $sql = "SELECT count(*) as c FROM projects;";
-            $stmt = $this->con->prepare($sql);
+            $stmt = $this->getConnection()->prepare($sql);
             $stmt->execute();
             $res = $stmt->fetch(PDO::FETCH_ASSOC);
             return $res['c'];
@@ -78,7 +145,7 @@
         public function     getProjects()
         {
             $sql = "SELECT * from projects ; "; 
-            $stmt = $this->con->prepare($sql); 
+            $stmt = $this->getConnection()->prepare($sql); 
             $stmt->execute(); 
                     
             return $stmt->fetchAll(PDO::FETCH_ASSOC);

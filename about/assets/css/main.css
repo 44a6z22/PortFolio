@@ -15,7 +15,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: #eeeeee; }
+  background: white; }
 
 #main-page {
   color: #707070; }
@@ -80,7 +80,7 @@ body {
       transition: .5s;
       height: 100%; }
   #secondary-page .white {
-    background: #eeeeee;
+    background: white;
     color: #053f5e; }
     #secondary-page .white .fa {
       color: #053f5e; }
@@ -92,13 +92,13 @@ body {
       letter-spacing: 5px; }
   #secondary-page .blue {
     background: #053f5e;
-    color: #eeeeee; }
+    color: white; }
     #secondary-page .blue .fa {
       color: white; }
     #secondary-page .blue h1 {
-      color: #eeeeee; }
+      color: white; }
       #secondary-page .blue h1::before {
-        background-color: #eeeeee; }
+        background-color: white; }
     #secondary-page .blue .about--title h1 {
       letter-spacing: 5px; }
   #secondary-page .arrow {
@@ -108,7 +108,7 @@ body {
     text-align: center; }
     #secondary-page .arrow-up {
       top: 44%;
-      color: #eeeeee; }
+      color: white; }
     #secondary-page .arrow-down {
       top: 51%;
       color: #053f5e; }
@@ -147,7 +147,7 @@ body {
     width: 100%;
     min-height: 1000px;
     margin: auto;
-    background: #eeeeee;
+    background: white;
     margin-bottom: 200px;
     color: black;
     text-transform: none;
@@ -165,14 +165,15 @@ body {
         #secondary-page .content .flex-container .aboutme .resume {
           padding: 20px; }
           #secondary-page .content .flex-container .aboutme .resume .btn {
-            padding: 20px 40px; }
+            padding: 20px 40px;
+            border-radius: 2px; }
             #secondary-page .content .flex-container .aboutme .resume .btn-resume {
               font-size: 20px;
               font-weight: bolder;
               border: 5px solid #053f5e; }
               #secondary-page .content .flex-container .aboutme .resume .btn-resume:hover {
                 background: #053f5e;
-                color: #eeeeee; }
+                color: white; }
         #secondary-page .content .flex-container .aboutme .discription p {
           line-height: 20px; }
         #secondary-page .content .flex-container .aboutme .rounded-img {
@@ -182,6 +183,18 @@ body {
           width: 10em; }
         #secondary-page .content .flex-container .aboutme div:not(:last-child) {
           margin-bottom: 30px; }
+        #secondary-page .content .flex-container .aboutme .map-container {
+          margin-top: 10%;
+          text-align: left;
+          /* Set the size of the div element that contains the map */ }
+          #secondary-page .content .flex-container .aboutme .map-container h3 {
+            margin-bottom: 10px; }
+          #secondary-page .content .flex-container .aboutme .map-container #map {
+            height: 300px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+            filter: grayscale(70%); }
         #secondary-page .content .flex-container .aboutme .moreAbout {
           display: grid;
           grid-template-columns: 50% 50%;
@@ -205,6 +218,9 @@ body {
       font-size: 70px; }
 
 @media only screen and (max-width: 760px) {
+  .go-in {
+    left: 43%; }
+
   #main-page .center {
     position: absolute;
     top: 45%;
@@ -221,26 +237,110 @@ body {
       font-size: 3rem;
       text-transform: uppercase; }
     #main-page .center #subTitle {
-      font-size: 1rem;
-      text-transform: uppercase; } }
+      font-size: .85rem;
+      text-transform: uppercase; }
+  #main-page .personnal-info {
+    left: 2%;
+    font-size: 20px;
+    text-transform: capitalize;
+    direction: ltr; }
+    #main-page .personnal-info div:not(:last-child) {
+      margin-bottom: 20px; } }
+@media only screen and (max-width: 760px) {
+  #secondary-page .content .flex-container .aboutme {
+    text-align: center;
+    width: 90%; }
+    #secondary-page .content .flex-container .aboutme .resume {
+      padding: 20px; }
+      #secondary-page .content .flex-container .aboutme .resume .btn {
+        padding: 20px 40px;
+        width: 90%; }
+    #secondary-page .content .flex-container .aboutme .discription p {
+      line-height: 20px; }
+    #secondary-page .content .flex-container .aboutme .rounded-img {
+      border: 1px solid black;
+      border-radius: 50%;
+      height: 10em;
+      width: 10em; }
+    #secondary-page .content .flex-container .aboutme div:not(:last-child) {
+      margin-bottom: 30px; }
+    #secondary-page .content .flex-container .aboutme .moreAbout {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      #secondary-page .content .flex-container .aboutme .moreAbout div h3 {
+        margin-bottom: 30px; }
+      #secondary-page .content .flex-container .aboutme .moreAbout div ul {
+        list-style: none; }
+        #secondary-page .content .flex-container .aboutme .moreAbout div ul li {
+          margin-bottom: 10px; }
+          #secondary-page .content .flex-container .aboutme .moreAbout div ul li a {
+            color: #053f5e;
+            font-weight: bolder; }
+            #secondary-page .content .flex-container .aboutme .moreAbout div ul li a:hover {
+              text-decoration: underline; }
+  #secondary-page .content .flex-item h2 {
+    font-size: 70px; } }
 
 @media only screen and (max-width: 760px) {
   #back-to-main #back {
     display: none; }
 
-  .personnal-info, .profissional-info {
+  .personnal-info,
+  .profissional-info {
     display: none; }
 
   .listIcon {
     display: block;
-    position: absolute;
-    right: 3%;
-    top: 3%; }
-    .listIcon .fa {
-      font-size: 20px; } }
+    width: 100%;
+    direction: rtl; }
+    .listIcon .fa-times,
+    .listIcon .fa-bars {
+      font-size: 30px !important;
+      position: absolute;
+      right: 3%;
+      top: 3%; }
+
+  .side-menu {
+    transition: .5s;
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    background: white;
+    height: 100%;
+    width: 0%; }
+    .side-menu .fa-times {
+      display: none; }
+    .side-menu .icons {
+      display: none; }
+
+  #ok:checked ~ .side-menu {
+    transition: .5s;
+    width: 100%; }
+    #ok:checked ~ .side-menu .icons {
+      margin-top: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      #ok:checked ~ .side-menu .icons .fa {
+        font-size: 25px !important;
+        margin: 5%; }
+    #ok:checked ~ .side-menu .fa-times {
+      display: block; }
+    #ok:checked ~ .side-menu .personnal-info, #ok:checked ~ .side-menu .profissional-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: initial; } }
 @media only screen and (min-width: 760px) {
   .listIcon {
-    display: none; } }
+    display: none; }
+
+  .side-menu {
+    display: none; }
+    .side-menu .fa-times {
+      display: none; } }
 .close:hover {
   transition: .5s;
   transform: rotate(-90deg); }
@@ -276,7 +376,7 @@ body {
   animation: slideIn 1s ease-in; }
 
 #back-to-main {
-  color: #eeeeee; }
+  color: white; }
 
 .top-left-corner {
   position: absolute;
@@ -300,7 +400,7 @@ body {
   .bottom-right-corner {
     bottom: 2%;
     right: 2%;
-    color: #eeeeee;
+    color: white;
     background: #053f5e;
     border-radius: 20px; }
   .bottom-left-corner {
