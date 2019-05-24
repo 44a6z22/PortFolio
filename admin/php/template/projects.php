@@ -41,7 +41,7 @@
                             if ($level == 1) {
                                 ?>
                                 <td>
-                                    <a href="" class="btn btn-warning">update</a>
+                                    <a href="?page=addproject&id=<?= $res['id']; ?>" class="btn btn-warning">update</a>
                                     <a href="php/actions/deleteProject.php?id=<?= $res['id']; ?>" class="btn btn-danger">Delete</a>
 
                                 </td>

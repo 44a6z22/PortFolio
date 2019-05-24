@@ -19,7 +19,7 @@
         }       
         else {
             // otherwise keep me in the login form
-            header ('location: ../../?err='.$res);
+            header ('location: ../../?error='.$res);
         }
     }
      

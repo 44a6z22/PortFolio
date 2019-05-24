@@ -8,7 +8,7 @@
         </div>
         <div class="content about--content">
             <?php
-                include "php/template/about.php";
+            include "php/template/about.php";
             ?>
         </div>
 
@@ -27,7 +27,7 @@
         </div>
         <div class="content skills--content">
             <?php
-                include "php/template/skills.php";
+            include "php/template/skills.php";
             ?>
         </div>
 

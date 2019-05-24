@@ -6,13 +6,24 @@
 
     <div class="icons">
 
-        <i class="fa fa-battery-full"></i>
+        <div class="mail">
+            <i class="fa fa-paper-plane"></i>
+            <span> <?= $po->getEmail() ?></span>
+        </div>
 
-        <i class="fa fa-paper-plane"></i>
+        <div class="github">
+            <i class="fa fa-github"></i>
+            <span>github.com/44a6z22</span>
+        </div>
 
-        <i class="fa fa-github"></i>
+        <div class="twitter">
+            <i class="fa fa-twitter"></i>
+            <span>44a6z2@</span>
+        </div>
 
-        <i class="fa fa-twitter"></i>
+        <div id="contact" class="btn btn-contact">
+            contact
+        </div>
 
     </div>
 

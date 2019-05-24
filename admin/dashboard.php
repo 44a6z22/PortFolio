@@ -1,5 +1,11 @@
 <?php
-    require "php/template/head.php";
+require "php/template/head.php";
+session_start();
+if (!isset($_SESSION['admin_session'])) {
+
+    header('location: index.php?error=3');
+}
+
 ?>
 
 <body id="page-top">
@@ -31,7 +37,7 @@
         <!-- Sidebar -->
         <ul class="sidebar navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>

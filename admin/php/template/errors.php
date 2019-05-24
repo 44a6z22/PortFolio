@@ -7,11 +7,15 @@ function    error($err)
         case 0:
             $res = Errors::$USER_NOT_FOUND;
             break;
-        case 3 :
+        case 3:
             $res = Errors::$LOGIN_FIRST;
             break;
         case 102:
             $res = Errors::$INPUTS_EMPTY;
+            break;
+            
+        default:
+            $res = Errors::$USER_NOT_FOUND;
             break;
     }
 
@@ -22,7 +26,7 @@ function    error($err)
 <div class="col-md-6 offset-md-3 danger">
     <div class="alert alert-danger" role="alert">
         <?php
-         echo error($err);
+        echo error($err);
         ?>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="flex-container">
+    <div class="flex-container">
 
     <div class="aboutme">
 
@@ -58,7 +58,7 @@
             </div>
         </div>
         <!-- /more -->
-       
+
         <!-- map -->
         <div class="map-container">
             <?php
@@ -67,6 +67,6 @@
             ?>
         </div>
         <!-- /map -->
-   
+
     </div>
 </div>

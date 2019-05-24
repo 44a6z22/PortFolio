@@ -167,13 +167,6 @@ body {
           #secondary-page .content .flex-container .aboutme .resume .btn {
             padding: 20px 40px;
             border-radius: 2px; }
-            #secondary-page .content .flex-container .aboutme .resume .btn-resume {
-              font-size: 20px;
-              font-weight: bolder;
-              border: 5px solid #053f5e; }
-              #secondary-page .content .flex-container .aboutme .resume .btn-resume:hover {
-                background: #053f5e;
-                color: white; }
         #secondary-page .content .flex-container .aboutme .discription p {
           line-height: 20px; }
         #secondary-page .content .flex-container .aboutme .rounded-img {
@@ -298,7 +291,7 @@ body {
     .listIcon .fa-bars {
       font-size: 30px !important;
       position: absolute;
-      right: 3%;
+      left: 3%;
       top: 3%; }
 
   .side-menu {
@@ -318,16 +311,25 @@ body {
     transition: .5s;
     width: 100%; }
     #ok:checked ~ .side-menu .icons {
-      margin-top: 20%;
+      margin-top: 40%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      direction: ltr; }
+      #ok:checked ~ .side-menu .icons div {
+        margin: 5%; }
       #ok:checked ~ .side-menu .icons .fa {
         font-size: 25px !important;
-        margin: 5%; }
+        text-align: center;
+        border: 1px solid #053f5e;
+        padding: 10px;
+        border-radius: 100%; }
     #ok:checked ~ .side-menu .fa-times {
-      display: block; }
+      display: block;
+      color: #053f5e !important; }
+      #ok:checked ~ .side-menu .fa-times:hover {
+        animation: 1s rotated ease-in-out; }
     #ok:checked ~ .side-menu .personnal-info, #ok:checked ~ .side-menu .profissional-info {
       display: flex;
       flex-direction: column;
@@ -416,6 +418,21 @@ body {
 
 a {
   text-decoration: none; }
+
+.btn-contact {
+  padding: 10px 30px;
+  background: #053f5e;
+  border-radius: 30px;
+  color: white; }
+.btn-resume {
+  font-size: 20px;
+  font-weight: bolder;
+  border: 5px solid #053f5e; }
+  .btn-resume:hover {
+    background: #053f5e;
+    color: white; }
+.btn:hover {
+  cursor: pointer; }
 
 @keyframes slideIn {
   0% {

@@ -11,7 +11,7 @@
     </div>
 
     <?php
-        include "info.php";
+    include "info.php";
     ?>
 
 

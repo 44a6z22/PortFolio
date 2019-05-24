@@ -14,8 +14,8 @@ include "php/template/head.php";
 
 		<?php
 
-			if (isset($_GET['err'])) {
-				$err = $_GET['err'];
+			if (isset($_GET['error'])) {
+				$err = $_GET['error'];
 				require "php/template/errors.php";
 			}
 
