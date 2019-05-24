@@ -150,7 +150,7 @@
 
         public function     getProjects()
         {
-            $sql = "SELECT * from projects ; ";
+            $sql = "SELECT * from projects order by id desc LIMIT 5 ; ";
             $stmt = $this->getConnection()->prepare($sql);
             $stmt->execute();
 
