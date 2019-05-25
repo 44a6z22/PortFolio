@@ -120,10 +120,10 @@
                 ':link' => $this->getLink() , 
                 ':owner' => $this->getOwner()
             );
-            // if( $this->validate() ){
+            if( $this->validate() ){
                 
                 return $stmt->execute($params);
-            // }
+            }
             return false;   
         }
 

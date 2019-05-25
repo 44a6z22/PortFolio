@@ -23,4 +23,3 @@
         });
     }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeoRtPYQHqs2Tor26SY0om3Hwg_LyvUfY&callback=initMap"></script>
