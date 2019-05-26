@@ -27,25 +27,25 @@
                 </tfoot>
                 <tbody>
                     <?php
-                    for ($i = 0; $i < 3; $i++) {
+                    $res = $skills->getSkills();
+                    foreach ($res as $r) {
 
                         ?>
                         <tr>
-                            <td>CSS</td>
-                            <td>hard skill</td>
-                            <td>70</td>
-                            <td>$i can manjfdsf dsfhsdlns</td>
+                            <td><?= $r['skillName'] ?></td>
+                            <td><?= $r['skillType'] ?></td>
+                            <td><?= $r['persentage'] ?>%</td>
+                            <td><?= $r['skillName'] ?></td>
                             <?php
-                            if ($level == 1) 
-                            {
-                            ?>
+                            if ($level == 1) {
+                                ?>
                                 <td>
-                                    <a href="" class="btn btn-warning">update</a>
-                                    <a href="" class="btn btn-danger">Delete</a>
+                                    <a href="?page=addSkill&skillId=<?= $r['id']?>" class=" btn btn-warning">update</a>
+                                    <a href= "php/actions/delete.php?skillId=<?= $r['id']?>" class="btn btn-danger">Delete</a>
                                 </td>
                             <?php
-                                }
-                            ?>
+                        }
+                        ?>
                         </tr>
 
                     <?php

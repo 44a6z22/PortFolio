@@ -23,9 +23,12 @@
             'about' => 'about',
             'skills' => 'skills',
             'goback' => 'go back',
-            'busy' => "i'm currently working on a project. ", 
-            'available' => 'i\'m ready to the next project',
-            'desc' => $po->desc()
+            'busy' => "i'm currently working on a project. ",
+            'avaliable' => 'i\'m ready to the next project',
+            'desc' => $po->desc(),
+            'hobbie' => 'Hobbies',
+            'browsers' => 'Preferred browser',
+            'localisation' => "My location"
         ),
         'fr' => array(
             'title' => 'HAMDAOUI Hamza',
@@ -35,9 +38,12 @@
             'about' => 'a propos',
             'skills' => 'competence',
             'goback' => 'l\'acceuil',
-            'busy' => 'Je travaille actuellement sur un projet.' ,            
-            'available' => 'je suis prêt pour le prochain projet',
-            'desc' => ' Lorem ipsum, QJQLDJQM dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.'
+            'busy' => 'Je travaille actuellement sur un projet.' ,
+            'avaliable' => 'je suis prêt pour le prochain projet',
+            'desc' => ' Lorem ipsum, QJQLDJQM dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.',
+            'hobbie' => 'Loisirs',
+            'browsers' => 'Navigateur préféré',
+            'localisation' => 'ma position'
         )
     );
 

@@ -14,7 +14,7 @@
                 <div class="card-body-icon">
                     <i class="fas fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">17 skills</div>
+                <div class="mr-5"><?= $skills->count(); ?> skills</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#skills">
                 <span class="float-left">View Details</span>
@@ -30,7 +30,7 @@
                 <div class="card-body-icon">
                     <i class="fas fa-fw fa-list"></i>
                 </div>
-                <div class="mr-5"><?=$project->count(); ?> projects </div>
+                <div class="mr-5"><?= $project->count(); ?> projects </div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#projects">
                 <span class="float-left">View Details</span>

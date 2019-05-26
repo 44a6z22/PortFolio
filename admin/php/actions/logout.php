@@ -1,7 +1,7 @@
 <?php
 
-    session_start(); 
+    session_start();
 
-    session_destroy();  
+    unset($_SESSION['admin_session']);  
 
     header('location: ../../');

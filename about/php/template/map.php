@@ -1,4 +1,4 @@
-<h3>My Location</h3>
+<h3><?= $lang[$_SESSION['lang']]['localisation'] ?> </h3>
 <!--The div element for the map -->
 <div id="map"></div>
 <script>
@@ -23,3 +23,5 @@
         });
     }
 </script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeoRtPYQHqs2Tor26SY0om3Hwg_LyvUfY&callback=initMap"></script>

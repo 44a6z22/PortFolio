@@ -42,7 +42,7 @@
                                 ?>
                                 <td>
                                     <a href="?page=addproject&id=<?= $res['id']; ?>" class="btn btn-warning">update</a>
-                                    <a href="php/actions/deleteProject.php?id=<?= $res['id']; ?>" class="btn btn-danger">Delete</a>
+                                    <a href="php/actions/delete.php?projectId=<?= $res['id']; ?>" class="btn btn-danger">Delete</a>
 
                                 </td>
                             <?php

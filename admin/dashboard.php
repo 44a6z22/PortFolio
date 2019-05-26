@@ -49,7 +49,7 @@ if (!isset($_SESSION['admin_session'])) {
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=addSkills">
+                <a class="nav-link" href="?page=addskill">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Add a skill</span></a>
             </li>
@@ -66,8 +66,8 @@ if (!isset($_SESSION['admin_session'])) {
                 if (!isset($_GET['page'])) {
                     include "php/template/pages/dashboard.php";
                 } else {
-
-                    include "php/template/pages/" . $_GET['page'] . ".php";
+                    
+                    require "php/template/pages/" . $_GET['page'] . ".php";
                 }
                 ?>
             </div>
