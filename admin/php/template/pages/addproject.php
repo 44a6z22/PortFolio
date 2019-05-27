@@ -26,7 +26,7 @@
 
         <div class="form-group">
             <label for="exampleFormControlInput1">realisation date</label>
-            <input type="text" class="form-control" name="date" id="exampleFormControlInput1" value="<?= $p->getDate() ?>">
+            <input type="text" class="form-control" name="date" id="exampleFormControlInput1" value="<?= $p->getDate() ?>" placeholder="YYYY/MM/DD">
         </div>
 
         <div class="form-group">

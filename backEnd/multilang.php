@@ -40,7 +40,7 @@
             'goback' => 'l\'acceuil',
             'busy' => 'Je travaille actuellement sur un projet.' ,
             'avaliable' => 'je suis prêt pour le prochain projet',
-            'desc' => ' Lorem ipsum, QJQLDJQM dolor sit amet consectetur adipisicing elit. Ipsum maxime, corporis aperiam ullam non rerum mollitia? Quos in nisi explicabo accusantium debitis, aperiam quidem quod aliquam saepe magnam, eos illo.',
+            'desc' => "Je suis développeur full stack depuis 2 ans. dans chaque nouveau projet, j'applique de nouvelles technologies pour un flux de travail plus efficace ",
             'hobbie' => 'Loisirs',
             'browsers' => 'Navigateur préféré',
             'localisation' => 'ma position'
