@@ -145,7 +145,7 @@
 
     public function     getSkillsByType($type)
     {
-        $sql = "SELECT * from skills WHERE skillType = :type order by id desc LIMIT 5 ; ";
+        $sql = "SELECT * from skills WHERE skillType = :type order by id ; ";
         $stmt = $this->getConnection()->prepare($sql);
         $stmt->execute(
             array(

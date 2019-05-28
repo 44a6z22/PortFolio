@@ -40,7 +40,7 @@ const mainColor = " #004883 ",
 				e.preventDefault();
 				e.target.parentNode.parentNode.classList.add('active');
 
-				if (e.target.classList.contains("fa-angle-up"))
+				if (e.target.classList.contains("angle-up"))
 				{
 
 					addOrRemove(blueContainer, whiteContainer, e.target.parentNode);
@@ -50,7 +50,7 @@ const mainColor = " #004883 ",
 					document.querySelector('.top-left-corner').style.color = mainColor;
 
 				}
-				else if (e.target.classList.contains("fa-angle-down"))
+				else if (e.target.classList.contains("angle-down"))
 				{
 
 					addOrRemove(whiteContainer, blueContainer, e.target.parentNode);

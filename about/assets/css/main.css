@@ -43,7 +43,7 @@ a {
       margin-bottom: 20px; }
   #main-page .center {
     position: absolute;
-    top: 45%;
+    top: 43%;
     width: 100%;
     cursor: pointer; }
     #main-page .center #title, #main-page .center #subTitle {
@@ -186,7 +186,7 @@ a {
           #secondary-page .content .flex-container .aboutme .map-container h3 {
             margin-bottom: 10px; }
           #secondary-page .content .flex-container .aboutme .map-container #map {
-            height: 300px;
+            height: 400px;
             /* The height is 400 pixels */
             width: 100%;
             /* The width is the width of the web page */
@@ -211,83 +211,57 @@ a {
                 #secondary-page .content .flex-container .aboutme .moreAbout div ul li a:hover {
                   text-decoration: underline; }
       #secondary-page .content .flex-container .skills {
-        width: 100%;
-        display: grid;
-        flex-direction: column;
-        /* Styling the determinate progress element */
-        /* Let's spice up things little bit by using pseudo elements. */
-        /* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
-        /* Fallback technique styles */
-        /* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */ }
-        #secondary-page .content .flex-container .skills progress[value] {
-          /* Get rid of the default appearance */
-          appearance: none;
-          /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
-          border: none;
-          /* Add dimensions */
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        #secondary-page .content .flex-container .skills-item {
           width: 100%;
-          height: 20px;
-          /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
-          background-color: whiteSmoke;
-          border-radius: 50px;
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
-          /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
-          color: royalblue;
-          position: relative;
-          margin: 0 0 1.5em; }
-        #secondary-page .content .flex-container .skills progress[value]::-webkit-progress-bar {
-          background-color: whiteSmoke;
-          border-radius: 50px;
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset; }
-        #secondary-page .content .flex-container .skills progress[value]::-webkit-progress-value {
-          position: relative;
-          background-size: 35px 20px, 100% 100%, 100% 100%;
-          border-radius: 50px;
-          /* Let's animate this */
-          animation: animate-stripes 5s linear infinite; }
-        #secondary-page .content .flex-container .skills progress[value]::-webkit-progress-value:after {
-          /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
-          content: '';
-          position: absolute;
-          width: 5px;
-          height: 5px;
-          top: 7px;
-          right: 7px;
-          background-color: white;
-          border-radius: 100%; }
-        #secondary-page .content .flex-container .skills progress[value]::-moz-progress-bar {
-          /* Gradient background with Stripes */
-          background-image: -moz-linear-gradient(to right, black, #004883);
-          border-radius: 50px;
-          /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */ }
-        #secondary-page .content .flex-container .skills .progress-bar {
-          background-color: whiteSmoke;
-          border-radius: 50px;
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
-          /* Dimensions should be similar to the parent progress element. */
-          width: 100%;
-          height: 20px; }
-        #secondary-page .content .flex-container .skills .progress-bar span {
-          background-color: royalblue;
-          border-radius: 50px;
-          display: block;
-          text-indent: -9999px; }
-        #secondary-page .content .flex-container .skills p[data-value] {
-          position: relative; }
-        #secondary-page .content .flex-container .skills p[data-value]:after {
-          content: attr(data-value) "%";
-          position: absolute;
-          right: 0; }
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          #secondary-page .content .flex-container .skills-item > div {
+            width: 50%;
+            padding: 0px 0px 90px 0px; }
+            #secondary-page .content .flex-container .skills-item > div h3 {
+              text-transform: uppercase;
+              text-align: center; }
+          #secondary-page .content .flex-container .skills-item.progress-bar {
+            display: flex;
+            flex-direction: row; }
+            #secondary-page .content .flex-container .skills-item.progress-bar h1 {
+              text-align: center; }
+            #secondary-page .content .flex-container .skills-item.progress-bar .skill {
+              display: flex;
+              padding: 30px; }
+              #secondary-page .content .flex-container .skills-item.progress-bar .skill .bar {
+                width: 400px;
+                background: #ddd;
+                margin-left: 20px;
+                height: 20px;
+                border-radius: 10px; }
+              #secondary-page .content .flex-container .skills-item.progress-bar .skill .skill-title {
+                width: 59px;
+                font-weight: bold; }
+              #secondary-page .content .flex-container .skills-item.progress-bar .skill .bar-color {
+                width: 30%;
+                background: #004883;
+                height: 100%;
+                border-radius: 10px;
+                -webkit-transition: all 0.7s linear;
+                transition: all 0.7s linear;
+                -webkit-transition-delay: 0.5s;
+                transition-delay: 0.5s; }
+          #secondary-page .content .flex-container .skills-item.more-skills > div {
+            padding: 0px 0px 0px 30px; }
+            #secondary-page .content .flex-container .skills-item.more-skills > div h4 {
+              padding: 0px 0px 20px 0px; }
     #secondary-page .content .flex-item h2 {
       font-size: 70px; }
 
 @media only screen and (max-width: 760px) {
-  .go-in {
-    left: 42%; }
-
   #main-page .center {
     position: absolute;
-    top: 45%;
+    top: 38%;
     width: 100%;
     cursor: pointer; }
     #main-page .center #title, #main-page .center #subTitle {

@@ -2,9 +2,11 @@
 <div class="container" id="main-page">
 
     <div class="listIcon" id="menu">
+
         <label for="ok">
-            <i class="fa fa-bars "></i>
+            <i class="fa fa-bars"></i>
         </label>
+        
         <input type="checkbox" id="ok" hidden >
 
         <?php include "sidemenu.php"; ?>

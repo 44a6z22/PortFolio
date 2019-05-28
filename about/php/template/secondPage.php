@@ -12,7 +12,7 @@
             ?>
         </div>
 
-        <a href="#" class="arrow arrow-up about"><i class="fa fa-angle-down fa-lg"></i></a>
+        <a href="#" class="arrow arrow-up about"><i class="fa fa-angle-down angle-down fa-lg"></i></a>
     </div>
     <!-- /about sec -->
 
@@ -31,7 +31,7 @@
             ?>
         </div>
 
-        <a href="#" class="arrow arrow-down skills"><i class="fa fa-angle-up fa-lg"></i></a>
+        <a href="#" class="arrow arrow-down skills"><i class="fa fa-angle-up angle-up fa-lg"></i></a>
     </div>
     <!-- /work sec -->
 
