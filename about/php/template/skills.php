@@ -1,7 +1,19 @@
 <div class="flex-container">
-    <div class="myskills">
+    <div class="skills">
 
-        <?php include 'progressbar.php' ?>
+        <div class="myskills">
+            <h3>Skills</h3>
+            <?php include 'progressbar.php' ?>
+        </div>
 
+        <div class="otherSkills">
+            <div class="otherSkills-item">
+                kf
+            </div>
+            <div class="otherSkills-item">
+                kld
+            </div>
+        </div>
+    
     </div>
 </div>

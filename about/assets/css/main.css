@@ -10,18 +10,21 @@ h1:hover {
 html {
   width: 100%;
   height: 100%;
-  color: #053f5e; }
+  color: #004883; }
 
 body {
   width: 100%;
   height: 100%;
-  background: white; }
+  background: #FCF9F7; }
+
+a {
+  color: #004883; }
 
 #main-page {
   color: #707070; }
   #main-page .fa {
     padding: 0px 20px;
-    color: #053f5e;
+    color: #004883;
     font-size: 20px; }
   #main-page .profissional-info {
     position: absolute;
@@ -49,7 +52,7 @@ body {
       font-weight: lighter;
       cursor: pointer; }
       #main-page .center #title span, #main-page .center #subTitle span {
-        color: #053f5e; }
+        color: #004883; }
     #main-page .center #title {
       font-size: 4.5rem;
       text-transform: uppercase; }
@@ -80,25 +83,25 @@ body {
       transition: .5s;
       height: 100%; }
   #secondary-page .white {
-    background: white;
-    color: #053f5e; }
+    background: #FCF9F7;
+    color: #004883; }
     #secondary-page .white .fa {
-      color: #053f5e; }
+      color: #004883; }
     #secondary-page .white h1 {
-      color: #053f5e; }
+      color: #004883; }
       #secondary-page .white h1::before {
-        background-color: #053f5e; }
+        background-color: #004883; }
     #secondary-page .white .skills--title h1 {
       letter-spacing: 5px; }
   #secondary-page .blue {
-    background: #053f5e;
-    color: white; }
+    background: #004883;
+    color: #FCF9F7; }
     #secondary-page .blue .fa {
       color: white; }
     #secondary-page .blue h1 {
-      color: white; }
+      color: #FCF9F7; }
       #secondary-page .blue h1::before {
-        background-color: white; }
+        background-color: #FCF9F7; }
     #secondary-page .blue .about--title h1 {
       letter-spacing: 5px; }
   #secondary-page .arrow {
@@ -108,10 +111,10 @@ body {
     text-align: center; }
     #secondary-page .arrow-up {
       top: 44%;
-      color: white; }
+      color: #FCF9F7; }
     #secondary-page .arrow-down {
       top: 51%;
-      color: #053f5e; }
+      color: #004883; }
   #secondary-page .go-up {
     transition: .5s;
     top: 2%; }
@@ -147,7 +150,7 @@ body {
     width: 100%;
     min-height: 100vh;
     margin: auto;
-    background: white;
+    background: #FCF9F7;
     margin-bottom: 200px;
     color: black;
     text-transform: none;
@@ -203,44 +206,20 @@ body {
             #secondary-page .content .flex-container .aboutme .moreAbout div ul li {
               margin-bottom: 10px; }
               #secondary-page .content .flex-container .aboutme .moreAbout div ul li a {
-                color: #053f5e;
+                color: #004883;
                 font-weight: bolder; }
                 #secondary-page .content .flex-container .aboutme .moreAbout div ul li a:hover {
                   text-decoration: underline; }
-      #secondary-page .content .flex-container .myskills {
-        width: 50%;
-        margin: auto;
-        /* Basic resets */
+      #secondary-page .content .flex-container .skills {
+        width: 100%;
+        display: grid;
+        flex-direction: column;
         /* Styling the determinate progress element */
-    /*
-Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
--webkit-progress-bar -> To style the progress element container
--webkit-progress-value -> To style the progress element value.
-*/
         /* Let's spice up things little bit by using pseudo elements. */
         /* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
         /* Fallback technique styles */
         /* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */ }
-        #secondary-page .content .flex-container .myskills .skills * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box; }
-        #secondary-page .content .flex-container .myskills .skills li {
-          width: 50%;
-          float: left;
-          list-style-type: none;
-          padding-right: 5.3333333%; }
-          #secondary-page .content .flex-container .myskills .skills li:nth-child(even) {
-            margin-bottom: 5em; }
-        #secondary-page .content .flex-container .myskills .skills h2 {
-          margin: 0 0 1.5em;
-          border-bottom: 1px solid #ccc;
-          padding: 0 0 .25em; }
-        #secondary-page .content .flex-container .myskills .skillsContainer {
-          margin: 50px auto 0;
-          width: 100%;
-          font-family: "Expletus Sans", sans-serif; }
-        #secondary-page .content .flex-container .myskills progress[value] {
+        #secondary-page .content .flex-container .skills progress[value] {
           /* Get rid of the default appearance */
           appearance: none;
           /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
@@ -256,17 +235,17 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
           color: royalblue;
           position: relative;
           margin: 0 0 1.5em; }
-        #secondary-page .content .flex-container .myskills progress[value]::-webkit-progress-bar {
+        #secondary-page .content .flex-container .skills progress[value]::-webkit-progress-bar {
           background-color: whiteSmoke;
           border-radius: 50px;
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset; }
-        #secondary-page .content .flex-container .myskills progress[value]::-webkit-progress-value {
+        #secondary-page .content .flex-container .skills progress[value]::-webkit-progress-value {
           position: relative;
           background-size: 35px 20px, 100% 100%, 100% 100%;
           border-radius: 50px;
           /* Let's animate this */
           animation: animate-stripes 5s linear infinite; }
-        #secondary-page .content .flex-container .myskills progress[value]::-webkit-progress-value:after {
+        #secondary-page .content .flex-container .skills progress[value]::-webkit-progress-value:after {
           /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
           content: '';
           position: absolute;
@@ -276,26 +255,26 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
           right: 7px;
           background-color: white;
           border-radius: 100%; }
-        #secondary-page .content .flex-container .myskills progress[value]::-moz-progress-bar {
+        #secondary-page .content .flex-container .skills progress[value]::-moz-progress-bar {
           /* Gradient background with Stripes */
-          background-image: -moz-linear-gradient(to right, black, #053f5e);
+          background-image: -moz-linear-gradient(to right, black, #004883);
           border-radius: 50px;
           /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */ }
-        #secondary-page .content .flex-container .myskills .progress-bar {
+        #secondary-page .content .flex-container .skills .progress-bar {
           background-color: whiteSmoke;
           border-radius: 50px;
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
           /* Dimensions should be similar to the parent progress element. */
           width: 100%;
           height: 20px; }
-        #secondary-page .content .flex-container .myskills .progress-bar span {
+        #secondary-page .content .flex-container .skills .progress-bar span {
           background-color: royalblue;
           border-radius: 50px;
           display: block;
           text-indent: -9999px; }
-        #secondary-page .content .flex-container .myskills p[data-value] {
+        #secondary-page .content .flex-container .skills p[data-value] {
           position: relative; }
-        #secondary-page .content .flex-container .myskills p[data-value]:after {
+        #secondary-page .content .flex-container .skills p[data-value]:after {
           content: attr(data-value) "%";
           position: absolute;
           right: 0; }
@@ -304,7 +283,7 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
 
 @media only screen and (max-width: 760px) {
   .go-in {
-    left: 43%; }
+    left: 42%; }
 
   #main-page .center {
     position: absolute;
@@ -317,7 +296,7 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
       font-weight: lighter;
       cursor: pointer; }
       #main-page .center #title span, #main-page .center #subTitle span {
-        color: #053f5e; }
+        color: #004883; }
     #main-page .center #title {
       font-size: 3rem;
       text-transform: uppercase; }
@@ -360,7 +339,7 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
         #secondary-page .content .flex-container .aboutme .moreAbout div ul li {
           margin-bottom: 10px; }
           #secondary-page .content .flex-container .aboutme .moreAbout div ul li a {
-            color: #053f5e;
+            color: #004883;
             font-weight: bolder; }
             #secondary-page .content .flex-container .aboutme .moreAbout div ul li a:hover {
               text-decoration: underline; }
@@ -391,7 +370,7 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
     display: block;
     position: fixed;
     z-index: 10000;
-    background: white;
+    background: #FCF9F7;
     height: 100%;
     width: 0%; }
     .side-menu .fa-times {
@@ -415,12 +394,12 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
       #ok:checked ~ .side-menu .icons .fa {
         font-size: 25px !important;
         text-align: center;
-        border: 1px solid #053f5e;
+        border: 1px solid #004883;
         padding: 10px;
         border-radius: 100%; }
     #ok:checked ~ .side-menu .fa-times {
       display: block;
-      color: #053f5e !important; }
+      color: #004883 !important; }
       #ok:checked ~ .side-menu .fa-times:hover {
         animation: 1s rotated ease-in-out; }
     #ok:checked ~ .side-menu .personnal-info, #ok:checked ~ .side-menu .profissional-info {
@@ -471,7 +450,7 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
   animation: slideIn 1s ease-in; }
 
 #back-to-main {
-  color: white; }
+  color: #FCF9F7; }
 
 .top-left-corner {
   position: absolute;
@@ -487,7 +466,7 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
   cursor: pointer;
   position: absolute;
   font-size: 20px;
-  color: white;
+  color: #FCF9F7;
   background: transparent;
   padding: 10px 15px;
   border: none;
@@ -495,8 +474,8 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
   .bottom-right-corner {
     bottom: 2%;
     right: 2%;
-    color: white;
-    background: #053f5e;
+    color: #FCF9F7;
+    background: #004883;
     border-radius: 20px; }
   .bottom-left-corner {
     bottom: 2%;
@@ -514,16 +493,16 @@ a {
 
 .btn-contact {
   padding: 10px 30px;
-  background: #053f5e;
+  background: #004883;
   border-radius: 30px;
-  color: white; }
+  color: #FCF9F7; }
 .btn-resume {
   font-size: 20px;
   font-weight: bolder;
-  border: 5px solid #053f5e; }
+  border: 5px solid #004883; }
   .btn-resume:hover {
-    background: #053f5e;
-    color: white; }
+    background: #004883;
+    color: #FCF9F7; }
 .btn:hover {
   cursor: pointer; }
 

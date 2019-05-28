@@ -3,9 +3,9 @@
 
     <div class="listIcon" id="menu">
         <label for="ok">
-            <i class="fa fa-bars fa-lg"></i>
+            <i class="fa fa-bars "></i>
         </label>
-        <input type="checkbox" id="ok" hidden>
+        <input type="checkbox" id="ok" hidden >
 
         <?php include "sidemenu.php"; ?>
     </div>

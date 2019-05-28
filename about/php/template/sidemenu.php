@@ -1,9 +1,11 @@
 <!-- side menu -->
 <div class="side-menu">
+    
     <label for="ok">
         <i class="fa fa-times"></i>
     </label>
-
+    
+    
     <div class="icons">
 
         <div class="mail">

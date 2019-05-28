@@ -19,7 +19,7 @@
             <!-- resume  -->
             <div class="resume">
                 <!-- <img src="" alt="" class="resume-img"> -->
-                <a class="btn btn-resume" id="resume">RESUME</a>
+                <a class="btn btn-resume" href="../photo/cv156.png" target="_blank" id="resume">RESUME</a>
             </div>
             <!-- /resume -->
             <!-- more -->

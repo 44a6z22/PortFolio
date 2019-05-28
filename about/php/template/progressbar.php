@@ -1,18 +1,4 @@
-<!--
-Lets start with a single html5 progress element. Currently our progress bar is in the indeterminate state. Lets change the status by adding 'max' and 'value' attribute to our progress element.
 
-We are almost done styling a single progress bar, except adding fallback technique for browsers that do not support progress element. The idea is to simulate the visual styles of the progress bar using `div` and `span`.
-
-Note:- To imitate the older browsers and help us style the fallback technique, we wil temporarily comment-out the progress tag.
--->
-
-
-<?php
-
-// $skill = new Skill($connection);
-// $res = $skill->getSkills();
-
-?>
 <div class="skillsContainer">
     <ul class="skills">
         <li>
@@ -34,10 +20,8 @@ Note:- To imitate the older browsers and help us style the fallback technique, w
             <?php
         }
         ?>
-
-
-
         </li>
+
         <li>
             <h2>Backend</h2>
 

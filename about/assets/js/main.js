@@ -1,5 +1,5 @@
 
-	const 	mainColor = " #053f5e ",
+const mainColor = " #004883 ",
 			transparent = "transparent";
 
 
@@ -8,7 +8,7 @@
 		{
 
 			// some vars that would help us through the code ;
-			const 	fas = document.querySelectorAll('a'),
+			const fas = document.querySelectorAll('.fa-lg'),
 					blueContainer =  document.querySelector("#secondary-page div.about"),
 					whiteContainer = document.querySelector("#secondary-page div.skills"),
 					arrowUp = document.querySelectorAll('.arrow-up')[0],
