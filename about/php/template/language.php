@@ -1,5 +1,5 @@
 <div class="alert">
-    <form action="index.php" methor="get">
+    <form action="index.php" methor="get" id="form">
         <input type="submit" name="lang" id="en" value="en">
         <input type="submit" name="lang" id="fr" value="fr">
     </form>
@@ -7,22 +7,21 @@
 
 <style>
     .alert {
-        background: grey;
-        z-index: 200;
-        width: 100%;
-        height: 40px;
+        height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        flex-direction: column;
     }
 
+    #form{
+        display: flex; 
+        flex-direction: column;
+    } 
+    
     #en,
     #fr {
-        width: 30px;
-        height: 30px;
-    }
-
-    #fr {
-        background: url(../../assets/images/fr.svg);
+        width: 50px;
+        height: 50px;
     }
 </style>

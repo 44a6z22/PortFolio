@@ -5,7 +5,7 @@
             <!-- front end -->
             <div class="frontEnd">
                 <h3> front-end </h3>
-                
+
                 <?php
                 $skill = new Skill($connection);
                 $res = $skill->getSkillsByType('frontEnd');
@@ -69,7 +69,7 @@
             <div>
                 <h4><?= $lang[$_SESSION['lang']]['more skills'] ?></h4>
                 <p>
-                    Flexbox, Grid, Wordpress, Seo (On-Page), Website speed optimization
+                    Flexbox, Grid, Website speed optimization
                 </p>
             </div>
             <!-- /more to know -->
@@ -77,8 +77,8 @@
 
             <!-- more to know -->
             <div>
-                <h4>Tools for communication and project management</h4>
-                <p>Skype, Discord, Trello</p>
+                <h4><?= $lang[$_SESSION['lang']]['tools'] ?></h4>
+                <p>Skype, Discord, Trello, Todoist</p>
             </div>
             <!-- /more to know -->
         </div>
@@ -89,7 +89,6 @@
         <div class="skills-item workflow">
             <!-- more to know -->
             <div>
-                <!-- fsdmjfsdmfjds -->
             </div>
             <!-- /more to know -->
 
@@ -103,21 +102,3 @@
         <!-- /workflow & stuff -->
     </div>
 </div>
-
-<script>
-    jQuery("document").ready(function() {
-        jQuery(".bar-color").css({
-            "background": "#2196F3",
-            "width": "95%"
-        });
-        jQuery(".skills:nth-of-type(2) .bar-color").css({
-            "width": "80%"
-        });
-        jQuery(".skills:nth-of-type(3) .bar-color").css({
-            "width": "70%"
-        });
-        jQuery(".skills:nth-of-type(4) .bar-color").css({
-            "width": "55%"
-        });
-    });
-</script>

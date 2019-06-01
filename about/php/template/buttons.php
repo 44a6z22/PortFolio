@@ -1,11 +1,6 @@
 <!-- close button -->
 <div>
-
-	<a href="#" class="top-left-corner">
-
-		<i class="fa fa-times close fa-lg"></i>
-
-	</a>
+		<i class="fa fa-times close fa-lg top-left-corner"></i>
 
 </div>
 <!-- /close button -->
@@ -24,7 +19,10 @@
 
 <!-- contect-->
 <!-- <div id="contact" class="bottom bottom-right-corner">
-	contact
+	<div class="contact">
+		<label for="contacts">Contact</label>
+		<input type="checkbox" id="contacts" hidden>
+	</div>
 </div> -->
 <!-- /contact -->
 

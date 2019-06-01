@@ -15,7 +15,7 @@
     // langs array 
     $lang = array(
         'en' => array(
-            // infos
+            
             'title' => 'HAMDAOUI Hamza',
             'fullstack' => 'Full-Stack Developer',
             'firstName' => $po->getFirstName(),
@@ -29,7 +29,8 @@
             'hobbie' => 'Hobbies',
             'browsers' => 'Preferred browser',
             'localisation' => "My location", 
-            'more skills' => "More skills"
+            'more skills' => "More skills", 
+            'tools' => "Tools for communication and project management"
         ),
         'fr' => array(
             'title' => 'HAMDAOUI Hamza',
@@ -45,7 +46,8 @@
             'hobbie' => 'Loisirs',
             'browsers' => 'Navigateur préféré',
             'localisation' => 'Ma position', 
-            'more skills' => "Plus de compétences"
+            'more skills' => "Plus de compétences", 
+            'tools' => "Outils de communication et de gestion de projet"
         )
     );
 
