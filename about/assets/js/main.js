@@ -1,7 +1,6 @@
 
-const mainColor = " #004883 ",
-			transparent = "transparent";
-
+	const mainColor = " #003B6C ",
+	transparent = "transparent";
 
 	(
 		function	(window)
@@ -180,8 +179,9 @@ const mainColor = " #004883 ",
 
 			function 	appearContent (e)
 			{
+				document.querySelector('.top-left-corner.close').style.color = mainColor;
+
 				e.target.style.display = "none";
-				document.querySelector('.close').style.color = mainColor;
 				var containerName = e.target.getAttribute('name');
 				document.querySelector(`.${containerName}--content`).style.display = "block";
 				setTimeout(function	()
@@ -229,7 +229,6 @@ const mainColor = " #004883 ",
 			{
 				window.document.getElementsByTagName('title')[0].innerHTML = "HAMDAOUI HAMZA " ;
 			};
-
 			
 		}
 	)(window);

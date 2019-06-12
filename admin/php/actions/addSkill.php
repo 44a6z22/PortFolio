@@ -8,7 +8,7 @@
         $skill->setName($_POST['name']);
         $skill->setType($_POST['type']); 
         $skill->setOwner($_POST['owner']); 
-        $skill->setPic($_POST['pic']);
+        $skill->setPic("skill pic");
         $skill->setPersentage($_POST['persentage']);
         if ($skill->add())
         {
@@ -23,7 +23,7 @@
         $skill->setName($_POST['name']);
         $skill->setType($_POST['type']);
         $skill->setOwner($_POST['owner']);
-        $skill->setPic($_POST['pic']);
+        $skill->setPic("skill pic");
         $skill->setPersentage($_POST['persentage']);
        
         if ($skill->update()) {

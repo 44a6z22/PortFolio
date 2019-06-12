@@ -4,7 +4,7 @@
 
             <!-- profile picture -->
             <div class="profilePic">
-                <img src="../photo/photo.jpg" class="rounded-img">
+                <img src="assets/images/pic.jpg" class="rounded-img">
             </div>
             <!-- /profile picture -->
 
@@ -19,7 +19,7 @@
             <!-- resume  -->
             <div class="resume">
                 <!-- <img src="" alt="" class="resume-img"> -->
-                <a class="btn btn-resume" href="../photo/cv156.png" target="_blank" id="resume">RESUME</a>
+                <a class="btn btn-resume" href="assets/attachement/cv.pptx"  id="resume">RESUME</a>
             </div>
             <!-- /resume -->
             <!-- more -->
@@ -33,7 +33,9 @@
                         foreach ($res as $r) {
                             ?>
                             <li>
-                                <a href="<?= $r['link']; ?> " target="_blank"> <?= $r['projectName']; ?> </a>
+                                <a class="button" href="<?= $r['link'] ?>"> <?= $r['projectName'] ?></a>
+
+
                             </li>
                         <?php
                     }

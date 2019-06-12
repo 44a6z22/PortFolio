@@ -168,6 +168,7 @@
             $this->name = $r['projectName'];
             $this->realisationDate = $r['realisationDate'];
             $this->link = $r['link'];
+            $this->type = $r['projectType'];
         }
             
         public function     update()

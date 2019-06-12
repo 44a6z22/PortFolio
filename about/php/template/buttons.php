@@ -1,7 +1,6 @@
 <!-- close button -->
 <div>
-		<i class="fa fa-times close fa-lg top-left-corner"></i>
-
+	<i class="fa fa-times close fa-lg top-left-corner"></i>
 </div>
 <!-- /close button -->
 

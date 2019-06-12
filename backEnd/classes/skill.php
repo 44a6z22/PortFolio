@@ -180,6 +180,7 @@
         $this->name = $r['skillName'];
         $this->persentage = $r['persentage'];
         $this->pic = $r['skillPicture'];
+        $this->type = $r["skillType"];
     }
 
     public function     update()

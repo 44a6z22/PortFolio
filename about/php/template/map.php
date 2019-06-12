@@ -5,22 +5,24 @@
     // Initialize and add the map
     function initMap() {
         // The location of Uluru
-        var uluru = {
+        var youssoufia = {
             lat: 32.195825,
             lng: -8.563511
         };
         // The map, centered at Uluru
         var map = new google.maps.Map(
             document.getElementById('map'), {
-                zoom: 8,
-                center: uluru
+                zoom: 9,
+                center: youssoufia
             });
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({
-            position: uluru,
+            position: youssoufia,
             map: map
         });
     }
+
+    
 </script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeoRtPYQHqs2Tor26SY0om3Hwg_LyvUfY&callback=initMap"></script>

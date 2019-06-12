@@ -5,10 +5,10 @@
 	<body>
 
 		<?php
-		// if (!isset($_SESSION['lang'])) {
-		// 	$_SESSION['lang'] = "en";
-		// 	require "php/template/language.php";
-		// }
+		if (!isset($_SESSION['lang'])) {
+			$_SESSION['lang'] = "en";
+			require "php/template/language.php";
+		}
 
 		require "php/template/contact.php";
 

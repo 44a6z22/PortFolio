@@ -12,7 +12,7 @@ if (!isset($_SESSION['admin_session'])) {
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top justify-content-space-between">
 
-        <a class="navbar-brand mr-1" href="index.php">Admin Dashboard</a>
+        <a class="navbar-brand mr-1" href="index.php">Admin pannel</a>
 
         <!-- Navbar -->
         <ul class="navbar-nav ml-auto ml-md-0">
@@ -36,18 +36,6 @@ if (!isset($_SESSION['admin_session'])) {
 
         <!-- Sidebar -->
         <ul class="sidebar navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link">
-                    <i class="fas fa-user-circle fa-fw"></i>
-                    <span>Edit Profile</span>
-                </a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="?page=addskill">
                     <i class="fas fa-fw fa-chart-area"></i>
@@ -66,7 +54,7 @@ if (!isset($_SESSION['admin_session'])) {
                 if (!isset($_GET['page'])) {
                     include "php/template/pages/dashboard.php";
                 } else {
-                    
+
                     require "php/template/pages/" . $_GET['page'] . ".php";
                 }
                 ?>

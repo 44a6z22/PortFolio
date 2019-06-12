@@ -1,0 +1,65 @@
+
+#main-page{
+    
+    color: $font_color;
+    
+    & .fa{
+        padding: 0px 20px;
+        color: $blueish;
+        font-size: 20px;
+    }
+    
+    & .profissional-info{
+        position: absolute;
+        top:    4%;
+        left: 2%;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+    & .personnal-info{
+        position: absolute;
+        top: 4%;
+        right: 2%;
+        font-size: 20px;
+        text-transform: capitalize;
+        direction: rtl; 
+
+        & div:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    
+    & .center {
+        
+        position: absolute;
+        top: 43%;
+        width: 100%;
+        cursor: pointer; 
+
+        & #title,
+        & #subTitle {
+            text-align: center;
+            color: $font_color;
+            font-weight: lighter;
+            cursor: pointer;
+            
+            & span {
+                color: $blueish;
+            }
+        }
+        
+        & #title {
+            font-size: 4.5rem;
+            text-transform: uppercase;
+        }
+
+        & #subTitle {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        
+    }
+    
+   
+}

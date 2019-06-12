@@ -7,7 +7,7 @@
 
 <style>
     .alert {
-        height: 100%;
+        height: 10%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -15,8 +15,6 @@
     }
 
     #form{
-        display: flex; 
-        flex-direction: column;
     } 
     
     #en,

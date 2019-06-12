@@ -1,0 +1,117 @@
+.close:hover{
+    @include rotated;
+}
+.close{
+     transition: .5s;
+     z-index: 99999999999;
+     cursor: pointer;
+}
+
+.vanish,
+.appear {
+    transition: .5s;
+}
+
+.vanish {
+    opacity: 0;
+}
+
+.appear {
+    opacity: 1;
+}
+
+.container--gone {
+    display: none;
+}
+
+.collapse {
+    transition: 1.9s;
+    height: 0;
+}
+
+.go-in {
+    cursor: pointer;
+    font-size: 50px;
+    position: absolute; 
+    left: 48%;
+    top: 91%;
+    padding: 0;
+    animation : slideIn 1s ease-in ;
+}
+
+#back-to-main {
+    color: $white;
+}
+
+.top-left-corner {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 30px;
+    color: $transparent;
+}
+.to-top{
+    top : 0%;
+    
+}
+.bottom{
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    color: $white;
+    background: transparent;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px 7px;
+
+    &-right-corner{
+        bottom: 2%;
+        right: 2%;    
+        color: $white;
+        background: $blueish;
+        border-radius: 20px;
+    }
+
+    &-left-corner {
+        bottom: 2%;
+        left: 2%;
+    
+        &:hover .close{
+            @include rotated;
+        }
+    }
+    & span {
+        padding-left: 10px;
+        padding-top: 8px;
+        text-transform: uppercase;
+    }
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    &-contact{
+        padding: 10px 30px; 
+        background: $blueish; 
+        border-radius: 30px;
+        color: $white;
+        
+    }
+
+    &-resume{
+        font-size: 20px;
+        font-weight: bolder;
+        border: 5px solid $blueish;
+        &:hover {
+            background: $blueish; 
+            color: $white; 
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

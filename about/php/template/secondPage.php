@@ -4,7 +4,7 @@
     <!-- about sec -->
     <div class=" blue about">
         <div class="about--title">
-            <h1 name='about'><?= $lang[$_SESSION['lang']]['about'] ?></h1>
+            <h1 name='about' class="about--name"><?= $lang[$_SESSION['lang']]['about'] ?></h1>
         </div>
         <div class="content about--content">
             <?php
@@ -20,10 +20,7 @@
     <!-- work sec -->
     <div class=" white skills">
         <div class="skills--title">
-            <a href="#skills-sec">
-                <h1 name='skills'><?= $lang[$_SESSION['lang']]['skills'] ?></h1>
-            </a>
-
+            <h1 name='skills' class="skill--name"><?= $lang[$_SESSION['lang']]['skills'] ?></h1>
         </div>
         <div class="content skills--content">
             <?php

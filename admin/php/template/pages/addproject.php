@@ -4,6 +4,24 @@
     if (isset($_GET['id'])) {
         $p->setId($_GET['id']);
         $p->getProject();
+        if($p->getType() == "Game")
+        {
+            $gSelected = "selected";
+            $mSelected = "";
+            $bSelected = "";
+        }
+        else if ($p->getType() == "mobile")
+        {
+            $mSelected = "selected";
+            $gSelected = "";
+            $wSelected = "";
+        } 
+         else if ($p->getType() == "website")
+        {
+            $wSelected = "selected";
+            $gSelected = "";
+            $mSelected = "";
+        } 
     }
 
 
@@ -18,9 +36,9 @@
         <div class="form-group">
             <label for="exampleFormControlSelect1">project type</label>
             <select class="form-control" name="type" id="exampleFormControlSelect1">
-                <option> website </option>
-                <option> mobile app </option>
-                <option> Browser game </option>
+                <option <?= $wSelected ?> > website </option>
+                <option <?= $mSelected ?>> mobile app </option>
+                <option <?= $gSelected ?> > Browser game </option>
             </select>
         </div>
 

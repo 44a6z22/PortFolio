@@ -1,9 +1,24 @@
 <?php
 $p = new Skill($connection);
+    $fSelected = ''; 
+    $bSelected = '';
 
 if (isset($_GET['skillId'])) {
+
     $p->setId($_GET['skillId']);
     $p->getSkill();
+    
+    if ($p->getType() == 'FrontEnd')
+    {
+        $fSelected = 'selected';
+        $bSelected = '';
+    }
+    else 
+    {
+        $fSelected = '';
+        $bSelected = 'selected';
+    }
+    echo $p->getType();
 }
 ?>
 
@@ -17,19 +32,14 @@ if (isset($_GET['skillId'])) {
     <div class="form-group">
         <label for="exampleFormControlSelect1">skill type</label>
         <select class="form-control" name="type" id="exampleFormControlSelect1">
-            <option value="frontEnd"> front-end </option>
-            <option value="backEnd"> back-end </option>
+            <option value="FrontEnd" <?= $fSelected ?> > front-end </option>
+            <option value="BackEnd"<?= $bSelected ?>> back-end </option>
         </select>
     </div>
 
     <div class="form-group">
         <label for="exampleFormControlInput1">persentage</label>
         <input type="text" class="form-control" name="persentage" id="exampleFormControlInput1" value="<?= $p->getPersentage() ?>">
-    </div>
-
-    <div class="form-group">
-        <label for="exampleFormControlInput1">picture</label>
-        <input type="text" class="form-control" name="pic" id="exampleFormControlInput1" value="<?= $p->getPic() ?>">
     </div>
 
     <div class="form-group">

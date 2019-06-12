@@ -13,7 +13,7 @@ require "php/config.php";
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta name="description" content="my degital print on the internet, my portfolio">
-	<meta name="keywords" content="HTML, CSS, JAVASCRIPT, JS , PORTFOLIO">
+	<meta name="keywords" content="HTML, CSS, JAVASCRIPT, JS , PORTFOLIO, DEGITAL PRINT">
 	<meta name="author" content="hamdaoui hamza">
 
 
@@ -26,7 +26,6 @@ require "php/config.php";
 
 	<!-- main css  -->
 	<link rel="stylesheet" href="assets/css/main.css">
-
 	<noscript>
 		<style>
 			* {

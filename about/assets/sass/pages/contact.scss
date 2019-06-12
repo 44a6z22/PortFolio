@@ -1,0 +1,19 @@
+#contact-form{
+    height: 0%; 
+    width: 100%;
+    background: $blueish; 
+    z-index: 20000000000000;
+    
+    *{
+        opacity: 0;
+    } 
+}
+
+#contacts:checked #contact-form{
+    transition: 2s;
+    height: 100%;
+    
+    *{
+        opacity: 1;
+    } 
+}

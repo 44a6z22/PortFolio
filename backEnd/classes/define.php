@@ -2,7 +2,7 @@
 
     abstract class  protoType
     {
-        private $con,
+        public $con,
             $id,
             $type,
             $owner,

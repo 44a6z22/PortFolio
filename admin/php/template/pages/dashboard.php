@@ -1,7 +1,7 @@
 <!-- Breadcrumbs-->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
-        <a href="#">Dashboard</a>
+        <a href="#">admin pannel</a>
     </li>
     <li class="breadcrumb-item active">Overview</li>
 </ol>
@@ -44,6 +44,6 @@
 </div>
 
 <?php
-include "php/template/projects.php";
-include "php/template/skills.php";
-?>
+    include "php/template/projects.php";
+    include "php/template/skills.php";
+?>  
